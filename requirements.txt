@@ -1,1 +1,1 @@
-excalibur-py==0.4.1
+excalibur-py==0.4.2
