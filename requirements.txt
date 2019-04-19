@@ -1,4 +1,1 @@
 excalibur-py==0.4.2
-pip==19.0.3
-setuptools==40.8.0
-wheel==0.33.1
