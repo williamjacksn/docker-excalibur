@@ -7,7 +7,4 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - excalibur-data:/excalibur
-
-volumes:
-  excalibur-data:
+      - ./:/excalibur
