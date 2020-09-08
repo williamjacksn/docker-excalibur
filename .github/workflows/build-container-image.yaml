@@ -1,0 +1,48 @@
+name: Build the container image
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+  release:
+    types:
+      - published
+
+jobs:
+
+  build:
+    name: Build the container image
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check out the repository
+        uses: actions/checkout@v2.3.2
+
+      - name: Build the container image
+        uses: docker/build-push-action@v1.1.0
+        with:
+          repository: excalibur
+
+      - name: Tag and push the image (GitHub)
+        if: github.event_name == 'push' || github.event_name == 'release'
+        uses: docker/build-push-action@v1.1.0
+        with:
+          repository: ${{ github.repository }}/excalibur
+          registry: docker.pkg.github.com
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+          tag_with_ref: true
+          add_git_labels: true
+
+      - name: Tag and push the image (Docker Hub)
+        if: github.event_name == 'push' || github.event_name == 'release'
+        uses: docker/build-push-action@v1.1.0
+        with:
+          repository: williamjackson/excalibur
+          username: ${{ secrets.docker_hub_username }}
+          password: ${{ secrets.docker_hub_password }}
+          tag_with_ref: true
+          add_git_labels: true
