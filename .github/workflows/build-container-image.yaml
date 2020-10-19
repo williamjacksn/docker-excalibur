@@ -30,10 +30,10 @@ jobs:
         if: github.event_name == 'push' || github.event_name == 'release'
         uses: docker/build-push-action@v1.1.1
         with:
-          repository: ${{ github.repository }}/excalibur
-          registry: docker.pkg.github.com
-          username: ${{ github.actor }}
-          password: ${{ github.token }}
+          repository: ${{ github.repository_owner }}/excalibur
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.ghcr_token }}
           tag_with_ref: true
           add_git_labels: true
 
