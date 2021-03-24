@@ -33,7 +33,7 @@ jobs:
           repository: ${{ github.repository_owner }}/excalibur
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.ghcr_token }}
+          password: ${{ github.token }}
           tag_with_ref: true
           add_git_labels: true
 
@@ -41,7 +41,7 @@ jobs:
         if: github.event_name == 'push' || github.event_name == 'release'
         uses: docker/build-push-action@v1.1.0
         with:
-          repository: williamjackson/excalibur
+          repository: ${{ secrets.docker_hub_username }}/excalibur
           username: ${{ secrets.docker_hub_username }}
           password: ${{ secrets.docker_hub_password }}
           tag_with_ref: true
