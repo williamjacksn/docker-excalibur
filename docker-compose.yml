@@ -1,10 +1,13 @@
-version: '3'
+version: '3.8'
 
 services:
   excalibur:
-    image: williamjackson/excalibur
+    image: ghcr.io/williamjacksn/excalibur
     build: .
     ports:
-      - 5000:5000
+      - 8080:8080
     volumes:
       - ./:/excalibur
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8080

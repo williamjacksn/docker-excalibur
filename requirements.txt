@@ -1,2 +1,4 @@
 --extra-index-url https://alpine-wheels.github.io/index
+
 excalibur-py==0.4.3
+waitress==2.0.0
