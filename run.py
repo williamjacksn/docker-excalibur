@@ -1,10 +1,19 @@
 import os
+import signal
+import sys
 
 from excalibur import configuration as conf
 from excalibur import settings
 from excalibur.utils.database import initialize_database
 from excalibur.www.app import create_app
 from waitress import serve
+
+
+def handle_sigterm(_signal, _frame):
+    sys.exit()
+
+signal.signal(signal.SIGTERM, handle_sigterm)
+
 
 # based on the code for `excalibur webserver`
 # at https://github.com/camelot-dev/excalibur/blob/v0.4.3/excalibur/cli.py#L48-L51
