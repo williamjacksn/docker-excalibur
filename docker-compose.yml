@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   excalibur:
     image: ghcr.io/williamjacksn/excalibur
