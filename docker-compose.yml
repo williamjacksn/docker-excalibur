@@ -7,7 +7,7 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./:/excalibur
+      - ./.local:/home/python/excalibur
     environment:
       HOST: 0.0.0.0
       PORT: 8080
