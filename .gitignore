@@ -1,3 +1,2 @@
 .idea
-.venv
-.vscode
+docker-compose.override.yaml
