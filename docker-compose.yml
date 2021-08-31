@@ -1,6 +1,7 @@
 services:
   excalibur:
     image: ghcr.io/williamjacksn/excalibur
+    init: true
     build: .
     ports:
       - 8080:8080
