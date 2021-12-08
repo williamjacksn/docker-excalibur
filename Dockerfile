@@ -1,4 +1,4 @@
-FROM python:3.9.7-alpine3.14
+FROM python:3.10.1-alpine3.14
 
 RUN /sbin/apk add --no-cache ghostscript-dev libstdc++
 RUN /sbin/apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.9/main qt-x11
