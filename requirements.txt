@@ -60,7 +60,7 @@ numpy==1.21.2
     #   camelot-py
     #   opencv-python
     #   pandas
-opencv-python==4.5.3.56
+opencv-python==4.5.4.60
     # via camelot-py
 openpyxl==3.0.7
     # via camelot-py
