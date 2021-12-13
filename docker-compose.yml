@@ -10,3 +10,14 @@ services:
     environment:
       HOST: 0.0.0.0
       PORT: 8080
+
+  shell:
+    entrypoint:
+      - /bin/sh
+    image: ghcr.io/williamjacksn/excalibur
+    init: true
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/home/python/docker-excalibur
+    working_dir: /home/python/docker-excalibur
