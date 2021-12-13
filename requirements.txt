@@ -64,7 +64,7 @@ opencv-python==4.5.4.60
     # via camelot-py
 openpyxl==3.0.7
     # via camelot-py
-pandas==1.3.2
+pandas==1.3.5
     # via camelot-py
 pdfminer.six==20201018
     # via camelot-py
