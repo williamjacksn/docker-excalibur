@@ -2,6 +2,11 @@ FROM python:3.9.9-slim-bullseye
 
 RUN /usr/sbin/useradd --create-home --shell /bin/bash --user-group python
 
+ARG DEBIAN_FRONTEND=noninteractive
+RUN /usr/bin/apt-get update \
+ && /usr/bin/apt-get install --assume-yes ghostscript \
+ && rm -rf /var/lib/apt/lists/*
+
 USER python
 RUN /usr/local/bin/python -m venv /home/python/venv
 
