@@ -4,8 +4,6 @@
 #
 #    pip-compile
 #
---extra-index-url https://alpine-wheels.github.io/index
-
 amqp==5.0.6
     # via kombu
 billiard==3.6.4.0
