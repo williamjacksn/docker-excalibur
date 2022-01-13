@@ -13,7 +13,7 @@ services:
 
   shell:
     entrypoint:
-      - /bin/sh
+      - /bin/bash
     image: ghcr.io/williamjacksn/excalibur
     init: true
     ports:
