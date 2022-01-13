@@ -1,8 +1,6 @@
-FROM python:3.10.1-alpine3.15
+FROM python:3.10.1-slim-bullseye
 
-RUN /sbin/apk add --no-cache ghostscript-dev libstdc++
-RUN /sbin/apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.9/main qt-x11
-RUN /usr/sbin/adduser -g python -D python
+RUN /usr/sbin/useradd --create-home --shell /bin/bash --user-group python
 
 USER python
 RUN /usr/local/bin/python -m venv /home/python/venv
@@ -12,6 +10,7 @@ RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/
 
 ENV EXCALIBUR_HOME="/home/python/excalibur" \
     PATH="/home/python/venv/bin:${PATH}" \
+    PYTHONDONTWRITEBYTECODE="1" \
     PYTHONUNBUFFERED="1"
 
 ENTRYPOINT ["/home/python/venv/bin/python"]
