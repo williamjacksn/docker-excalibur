@@ -70,7 +70,7 @@ prompt-toolkit==3.0.20
     # via click-repl
 pycparser==2.20
     # via cffi
-pypdf2==1.26.0
+pypdf2==1.27.5
     # via camelot-py
 python-dateutil==2.8.2
     # via pandas
