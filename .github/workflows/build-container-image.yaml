@@ -38,7 +38,7 @@ jobs:
 
       - name: Log in to GitHub container registry
         if: github.event_name == 'push' || github.event_name == 'release'
-        uses: docker/login-action@v1.14.1
+        uses: docker/login-action@v2.0.0
         with:
           registry: ghcr.io
           password: ${{ github.token }}
@@ -46,7 +46,7 @@ jobs:
 
       - name: Log in to Docker Hub
         if: github.event_name == 'push' || github.event_name == 'release'
-        uses: docker/login-action@v1.14.1
+        uses: docker/login-action@v2.0.0
         with:
           password: ${{ secrets.docker_hub_password }}
           username: ${{ secrets.docker_hub_username }}
