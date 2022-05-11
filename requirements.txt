@@ -36,7 +36,7 @@ click-repl==0.2.0
     # via celery
 configparser==3.5.3
     # via excalibur-py
-cryptography==3.4.8
+cryptography==37.0.2
     # via pdfminer-six
 et-xmlfile==1.1.0
     # via openpyxl
