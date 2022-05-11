@@ -56,7 +56,7 @@ kombu==5.2.4
     # via celery
 markupsafe==2.1.1
     # via jinja2
-numpy==1.21.2
+numpy==1.22.3
     # via
     #   camelot-py
     #   opencv-python
