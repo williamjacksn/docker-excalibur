@@ -73,7 +73,7 @@ pdftopng==0.2.3
     # via camelot-py
 prompt-toolkit==3.0.29
     # via click-repl
-pycparser==2.20
+pycparser==2.21
     # via cffi
 pypdf2==1.27.5
     # via camelot-py
