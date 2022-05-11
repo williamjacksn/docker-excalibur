@@ -12,7 +12,7 @@ camelot-py[cv]==0.10.1
     # via excalibur-py
 celery==5.1.2
     # via excalibur-py
-cffi==1.14.6
+cffi==1.15.0
     # via cryptography
 chardet==4.0.0
     # via
