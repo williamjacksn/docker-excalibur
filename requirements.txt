@@ -4,7 +4,7 @@
 #
 #    pip-compile
 #
-amqp==5.0.6
+amqp==5.1.1
     # via kombu
 billiard==3.6.4.0
     # via celery
