@@ -71,7 +71,7 @@ pdfminer-six==20220506
     # via camelot-py
 pdftopng==0.2.3
     # via camelot-py
-prompt-toolkit==3.0.20
+prompt-toolkit==3.0.29
     # via click-repl
 pycparser==2.20
     # via cffi
