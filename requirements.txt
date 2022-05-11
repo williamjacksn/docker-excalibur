@@ -15,9 +15,9 @@ celery==5.1.2
 cffi==1.15.0
     # via cryptography
 chardet==4.0.0
-    # via
-    #   camelot-py
-    #   pdfminer-six
+    # via camelot-py
+charset-normalizer==2.0.12
+    # via pdfminer-six
 click==7.1.2
     # via
     #   camelot-py
@@ -36,7 +36,7 @@ click-repl==0.2.0
     # via celery
 configparser==3.5.3
     # via excalibur-py
-cryptography==37.0.2
+cryptography==36.0.2
     # via pdfminer-six
 et-xmlfile==1.1.0
     # via openpyxl
@@ -67,7 +67,7 @@ openpyxl==3.0.9
     # via camelot-py
 pandas==1.4.2
     # via camelot-py
-pdfminer-six==20201018
+pdfminer-six==20220506
     # via camelot-py
 pdftopng==0.2.3
     # via camelot-py
@@ -87,8 +87,6 @@ six==1.16.0
     # via
     #   click-repl
     #   python-dateutil
-sortedcontainers==2.4.0
-    # via pdfminer-six
 sqlalchemy==1.4.36
     # via excalibur-py
 tabulate==0.8.9
