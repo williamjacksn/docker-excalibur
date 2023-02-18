@@ -1,4 +1,4 @@
-FROM python:3.11.2-slim-bullseye
+FROM python:3.9.12-slim-bullseye
 
 RUN /usr/sbin/useradd --create-home --shell /bin/bash --user-group python
 
