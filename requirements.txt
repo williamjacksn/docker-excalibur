@@ -78,7 +78,7 @@ prompt-toolkit==3.0.38
     # via click-repl
 pycparser==2.21
     # via cffi
-pypdf2==2.12.1
+pypdf2==3.0.1
     # via
     #   -r requirements.in
     #   camelot-py
@@ -95,9 +95,7 @@ six==1.16.0
 sqlalchemy==2.0.4
     # via excalibur-py
 typing-extensions==4.5.0
-    # via
-    #   pypdf2
-    #   sqlalchemy
+    # via sqlalchemy
 vine==5.0.0
     # via
     #   amqp
