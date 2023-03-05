@@ -2,6 +2,6 @@ camelot-py[cv]==0.9.0
 celery==5.1.2
 excalibur-py==0.4.3
 flask==1.1.4
-markupsafe==2.0.1
+markupsafe==2.1.2
 pypdf2==2.12.1
 waitress

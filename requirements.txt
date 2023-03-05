@@ -57,7 +57,7 @@ jinja2==2.11.3
     # via flask
 kombu==5.2.4
     # via celery
-markupsafe==2.0.1
+markupsafe==2.1.2
     # via
     #   -r requirements.in
     #   jinja2
@@ -95,9 +95,7 @@ six==1.16.0
 sqlalchemy==2.0.4
     # via excalibur-py
 typing-extensions==4.5.0
-    # via
-    #   pypdf2
-    #   sqlalchemy
+    # via sqlalchemy
 vine==5.0.0
     # via
     #   amqp
