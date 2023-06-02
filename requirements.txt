@@ -39,7 +39,7 @@ click-repl==0.2.0
     # via celery
 configparser==3.5.3
     # via excalibur-py
-cryptography==39.0.2
+cryptography==41.0.0
     # via pdfminer-six
 et-xmlfile==1.1.0
     # via openpyxl
@@ -95,9 +95,7 @@ six==1.16.0
 sqlalchemy==2.0.4
     # via excalibur-py
 typing-extensions==4.5.0
-    # via
-    #   pypdf2
-    #   sqlalchemy
+    # via sqlalchemy
 vine==5.0.0
     # via
     #   amqp
