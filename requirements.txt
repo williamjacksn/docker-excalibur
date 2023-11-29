@@ -11,6 +11,7 @@ billiard==3.6.4.0
 camelot-py[cv]==0.9.0
     # via
     #   -r requirements.in
+    #   camelot-py
     #   excalibur-py
 celery==5.1.2
     # via
@@ -39,7 +40,7 @@ click-repl==0.2.0
     # via celery
 configparser==3.5.3
     # via excalibur-py
-cryptography==41.0.4
+cryptography==41.0.6
     # via pdfminer-six
 et-xmlfile==1.1.0
     # via openpyxl
@@ -95,7 +96,9 @@ six==1.16.0
 sqlalchemy==2.0.4
     # via excalibur-py
 typing-extensions==4.5.0
-    # via sqlalchemy
+    # via
+    #   pypdf2
+    #   sqlalchemy
 vine==5.0.0
     # via
     #   amqp
