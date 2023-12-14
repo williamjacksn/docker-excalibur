@@ -11,7 +11,6 @@ billiard==3.6.4.0
 camelot-py[cv]==0.11.0
     # via
     #   -r requirements.in
-    #   camelot-py
     #   excalibur-py
 celery==5.1.2
     # via
@@ -86,8 +85,6 @@ pycparser==2.21
     # via cffi
 pypdf==3.17.2
     # via camelot-py
-pypdf2==2.12.1
-    # via -r requirements.in
 python-dateutil==2.8.2
     # via pandas
 pytz==2022.7.1
@@ -105,7 +102,6 @@ tabulate==0.9.0
 typing-extensions==4.5.0
     # via
     #   pypdf
-    #   pypdf2
     #   sqlalchemy
 vine==5.0.0
     # via
