@@ -8,7 +8,7 @@ amqp==5.1.1
     # via kombu
 billiard==3.6.4.0
     # via celery
-camelot-py[cv]==0.9.0
+camelot-py[cv]==0.11.0
     # via
     #   -r requirements.in
     #   camelot-py
@@ -32,6 +32,7 @@ click==7.1.2
     #   click-repl
     #   excalibur-py
     #   flask
+    #   pdftopng
 click-didyoumean==0.3.0
     # via celery
 click-plugins==1.1.1
@@ -50,6 +51,8 @@ flask==1.1.4
     # via
     #   -r requirements.in
     #   excalibur-py
+ghostscript==0.7
+    # via camelot-py
 greenlet==2.0.2
     # via sqlalchemy
 itsdangerous==1.1.0
@@ -75,14 +78,16 @@ pandas==1.5.3
     # via camelot-py
 pdfminer-six==20221105
     # via camelot-py
+pdftopng==0.2.3
+    # via camelot-py
 prompt-toolkit==3.0.38
     # via click-repl
 pycparser==2.21
     # via cffi
+pypdf==3.17.2
+    # via camelot-py
 pypdf2==2.12.1
-    # via
-    #   -r requirements.in
-    #   camelot-py
+    # via -r requirements.in
 python-dateutil==2.8.2
     # via pandas
 pytz==2022.7.1
@@ -95,8 +100,11 @@ six==1.16.0
     #   python-dateutil
 sqlalchemy==2.0.4
     # via excalibur-py
+tabulate==0.9.0
+    # via camelot-py
 typing-extensions==4.5.0
     # via
+    #   pypdf
     #   pypdf2
     #   sqlalchemy
 vine==5.0.0
