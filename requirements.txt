@@ -11,6 +11,7 @@ billiard==3.6.4.0
 camelot-py[cv]==0.11.0
     # via
     #   -r requirements.in
+    #   camelot-py
     #   excalibur-py
 celery==5.1.2
     # via
@@ -108,7 +109,7 @@ vine==5.0.0
     #   amqp
     #   celery
     #   kombu
-waitress==2.1.2
+waitress==3.0.0
     # via -r requirements.in
 wcwidth==0.2.6
     # via prompt-toolkit
