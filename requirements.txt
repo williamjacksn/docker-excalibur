@@ -92,7 +92,7 @@ six==1.16.0
     # via python-dateutil
 sqlalchemy==2.0.4
     # via excalibur-py
-typing-extensions==4.5.0
+typing-extensions==4.12.2
     # via
     #   pypdf2
     #   sqlalchemy
