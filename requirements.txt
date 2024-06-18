@@ -72,7 +72,7 @@ openpyxl==3.1.1
     # via camelot-py
 pandas==1.5.3
     # via camelot-py
-pdfminer-six==20221105
+pdfminer-six==20231228
     # via camelot-py
 prompt-toolkit==3.0.38
     # via click-repl
