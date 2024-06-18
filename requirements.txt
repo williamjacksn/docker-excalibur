@@ -35,7 +35,7 @@ click-didyoumean==0.3.0
     # via celery
 click-plugins==1.1.1
     # via celery
-click-repl==0.2.0
+click-repl==0.3.0
     # via celery
 configparser==3.5.3
     # via excalibur-py
@@ -89,9 +89,7 @@ pytz==2022.7.1
     #   celery
     #   pandas
 six==1.16.0
-    # via
-    #   click-repl
-    #   python-dateutil
+    # via python-dateutil
 sqlalchemy==2.0.4
     # via excalibur-py
 typing-extensions==4.5.0
