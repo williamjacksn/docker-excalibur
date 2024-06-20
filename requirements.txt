@@ -96,7 +96,7 @@ typing-extensions==4.12.2
     # via
     #   pypdf2
     #   sqlalchemy
-vine==5.0.0
+vine==5.1.0
     # via
     #   amqp
     #   celery
