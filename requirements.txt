@@ -61,7 +61,7 @@ markupsafe==2.0.1
     # via
     #   -r requirements.in
     #   jinja2
-numpy==1.24.2
+numpy==2.0.0
     # via
     #   camelot-py
     #   opencv-python
