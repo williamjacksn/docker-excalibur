@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> This repository is archived because I no longer actively use this software. If you have a question about this repo, please
+> [open an issue on my personal repository][x].
+
+[x]: https://github.com/williamjacksn/williamjacksn/issues
+
 # Excalibur
 
 This is a Docker image for [Excalibur][a], a web interface to extract tabular data from PDFs. 
