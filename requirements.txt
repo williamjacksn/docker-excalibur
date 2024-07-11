@@ -49,7 +49,7 @@ flask==1.1.4
     # via
     #   -r requirements.in
     #   excalibur-py
-greenlet==2.0.2
+greenlet==3.0.3
     # via sqlalchemy
 itsdangerous==1.1.0
     # via flask
